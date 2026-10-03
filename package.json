@@ -1,0 +1,21 @@
+{
+  "name": "stockmaster-cucumber-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:cucumber": "cucumber-js --config cucumber.js",
+    "test:cucumber:auth": "cucumber-js --config cucumber.js --tags @authentication",
+    "test:cucumber:auth:chromium": "cucumber-js --config cucumber.js --tags @authentication",
+    "test:cucumber:auth:chromium:independent": "cucumber-js --config cucumber.js --tags \"@authentication and not @requires-credentials\"",
+    "test:cucumber:smoke": "cucumber-js --config cucumber.js --tags @smoke",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "dotenv": "^18.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
