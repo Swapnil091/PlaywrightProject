@@ -9,6 +9,9 @@
     "test:cucumber:auth:chromium:independent": "cucumber-js --config cucumber.js --tags \"@authentication and not @requires-credentials\"",
     "test:cucumber:smoke": "cucumber-js --config cucumber.js --tags @smoke",
     "typecheck": "tsc --noEmit"
+    "scripts": {
+  "build": "tsc --noEmit"
+}
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",
